@@ -1,17 +1,13 @@
 $(document).ready(function() {
 
-	$("#portfolio_grid").mixItUp();
+	  $('.header__burger').click(function(event) {
+    $('.header__burger,.header__menu_mob').toggleClass('active');
+    $('body').toggleClass('lock')
+  });  //burger
 
-	$(".s_portfolio li").click(function() {
-		$(".s_portfolio li").removeClass("active");
-		$(this).addClass("active");
-	});
 
-	$(".popup").magnificPopup({type:"image"});
-	$(".popup_content").magnificPopup({
-		type:"inline",
-		midClick: true
-	});
+
+
 
 	$(".section_header").animated("fadeInUp", "fadeOutDown");
 	$(".animation_1").animated("flipInY", "flipOutY");
@@ -25,6 +21,7 @@ $(document).ready(function() {
 	function heightDetect() {
 		$(".main_head").css("height", $(window).height());
 	};
+
 	function DetectMenu()
 	{
 		var width = $('body').innerWidth();
@@ -68,8 +65,8 @@ if (width>600)
 	//ResizeHeaderBlocks();
 
 	$(window).resize(function() {
-		DetectMenu();
-		heightDetect();
+		//DetectMenu();
+		//heightDetect();
 		//ResizeHeaderBlocks();
 	});
 

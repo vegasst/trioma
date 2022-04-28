@@ -1,194 +1,524 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="shortcut icon" href="favicon.png" />
-	<!-- 	<link rel="stylesheet" href="	 > -->
-	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="libs/font-awesome/css/fontawesome.min.css" />
-	<link rel="stylesheet" href="libs/linea/styles.css" />
-	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
-	<link rel="stylesheet" href="libs/animate/animate.min.css" />
-	<link rel="stylesheet" href="css/css/fonts.css" />
-	<link rel="stylesheet" href="css/css/main.css" />
-	<link rel="stylesheet" href="css/css/media.css" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="favicon.png" />
+		<!-- 	<link rel="stylesheet" href="	 > -->
+		<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="libs/font-awesome/css/fontawesome.min.css" />
+		<link rel="stylesheet" href="libs/linea/styles.css" />
+		<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
+		<link rel="stylesheet" href="libs/animate/animate.min.css" />
+		<link rel="stylesheet" href="css/css/fonts.css" />
+		<link rel="stylesheet" href="css/css/main.css" />
+		<link rel="stylesheet" href="css/css/media.css" />
 
-</head>
+	</head>
 
-<body>
+	<body>
 
-	<div class="loader">
-		<div class="loader_inner"></div>
-	</div>
-	
-	<header class="main_head" data-parallax="scroll" data-image-src="img/bg.jpg" data-z-index="0">
-		<div class="container-fluid z-2">
+		<div class="loader">
+			<div class="loader_inner"></div>
+		</div>
+		
+		
 
+		<!--!      HEADER        -->
 
-			<div class="row top_row p-0">
-				
-				<div class="col-md-3 top_logo">
-					
-					<img src="img/logo.png">
-					
-				</div>
-				<div class="col-md-9">
-					<div class="row">
-						<div class="col-lg-10 .col-md-12 z-index2 top_address_info">
-						
-			
+		<header class="header">
+
+			<div class="container-fluid top_gradient">
+
+				<div class="row">  <!-- верхня частина з меню --> 
+
+					<div class="col-9 col-md-3">  
+						<div class="logo">
+							<a href="#">
+								<img src="img/logo.svg" alt="Logo">
+							</a>
+							<h1 class="logo_title">
+								TRIOMA
+							</h1>
 						</div>
+					</div>      
 
-						<div class="col-lg-2 .col-md-12 z-index2">
-							<div class="top_language">
-								<div class="language_item">
-									<img src="img/flags/ua.png">
-								</div>
-								<div class="language_item_last">
-									<img src="img/flags/ru.png">
-								</div>
+					<div class="col-3 col-md-7 gnl_menu">      
+
+						<!--!      MENU        -->
+
+						<nav class="header__menu">
+							<ul header__list>
+								<li class="nav_li">
+									<a href="" class="nav_link">Home</a>
+								</li>
+								<li class="nav_li">
+									<a href="" class="nav_link">Materials</a>
+								</li>
+								<li class="nav_li">
+									<a href="" class="nav_link">About us</a>
+								</li>
+								<li class="nav_li">
+									<a href="#contact" class="nav_link">Contacts</a>
+								</li>
+							</ul>
+						</nav>
+
+						<!--!     END MENU        -->
+
+						<div class="burger_bcg">
+
+							<div class="header__burger">
+								<span>
+								</span>
 							</div> 
 						</div>
+
+						<!--!      MENU    MOBILE    -->
+
+						<nav class="header__menu_mob">
+							<div class="logo_burger_block">
+								<img src="img/logo.jpg" alt="" class="logo_burger">
+							</div>
+							<ul header__list>
+								<li class="nav_li_mob">
+									<a href="" class="nav_link_mob">Home</a>
+								</li>
+								<li class="nav_li_mob">
+									<a href="" class="nav_link_mob">Materials</a>
+								</li>
+								<li class="nav_li_mob">
+									<a href="" class="nav_link_mob">About us</a>
+								</li>
+								<li class="nav_li_mob">
+									<a href="" class="nav_link_mob">Contacts</a>
+								</li>
+							</ul>
+
+							<div class="mob_menu_bottom">
+								<p>DON'T HESITATE CONTACT US! </p>
+								<a href="#">Do you have Catalysts to sell?</a>
+							</div>
+						</nav>
+
+
+						<!--!     END MENU        -->
+
+					</div>	
+					<div class="col-12 col-md-2">
+						<button class="button_contact float-right ">
+							Contacts
+						</button>  
 					</div>
 
-					<div class="row color_bg">
-						<div class="top_menu">
-							<nav class="navbar navbar-expand-lg navbar-dark color_bg">
-								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-									<span class="navbar-toggler-icon"></span>
-								</button>
-								<div class="collapse navbar-collapse top_menu" id="navbarNavDropdown">
-									<ul class="navbar-nav">
-										<li class="nav-item active">
-											<a class="nav-link" href="#">О Компании</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">Взять Кредит</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">Инвестировать</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">Контакти</a>
-										</li>
-									</ul>
+				</div>	
+
+				<div class="row main_text">
+					<div class="col-12 col-md-6">
+						<div>
+							<div class="title">
+								Do you have
+								<br>Catalysts to sell?
+							</div>
+							<div class="subtitle">
+								DON'T HESITATE CONTACT US!
+							</div>
+
+							<button class="button_sell_the_catalyst">
+								Sell the catalyst?
+							</button>  
+						</div>
+						
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="main_photo">
+							<img src="img/genral_img.png" alt="" class=""> 
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class="row second_text">
+					<div class="col-12 col-md-6">
+
+						<div class="subtitle subtitle_second_section">
+							Trioma
+						</div>
+						<div class="title title_second_section">
+							International
+							<br>Business
+							<br>Group
+						</div>
+						<hr / class="line">
+						
+					</div>
+					<div class="col-12 col-md-6">
+
+						<h3 class="text_trioma">
+							<p>
+								<strong>Purchase and disposal of industrial waste and catalytic materials containing precious metals.</strong>
+								<br>Our specialization: autocatalysts, gas purification catalysts, chemical industry and petrochemical catalysts.
+								<br>Also all other recyclable industry waste containing precious metals
+								<br>The TRIOMA group is an active participant in the worldwide recycling of metals from the platinum group and gold.
+								<br>The company is represented by regional collection centers in Western Europe, the Middle East, North Africa and South Africa.
+								<br>The Trioma Group has all the necessary licenses for the purchase and transport of hazardous waste (160801, 160804, etc.). 
+							</p>
+						</h3>
+					</div>
+
+				</div>
+
+
+			</div>
+		</header>
+
+
+		<!--!      END HEADER        -->
+
+		
+
+
+		<!--!     THIRD SECTION        -->
+		<section>
+			<div class="container-fluid third_section">
+				<div class="row">
+
+					<div class="title title_third_section">
+						<h2> Materials</h2>
+					</div>
+
+					<div class="col-12 col-md-6 col-lg-6 col-xl-4 col_material1 d-flex">
+						<div class="materials">
+							<div class="name_materials">
+								CERAMIC CATALYSTS
+							</div>
+							<div class="front material_img material_img1">
+								<div class="back">
+									<p class="back_text">
+										The ceramic in the catalyst (monolith) that is built up with thin channels (honeycomb structure) is coated with PGMs such as platinum, palladium and rhodium, which provide the catalytic effect to the exhaust gases.
+									</p>
 								</div>
-							</nav>
-						</div>	
-					</div>
-
-				</div>
-
-				
-
-			</div>
-		</div> 
-
-		<div class="top_wrapper">
-
-			<div class="header_block_row d-flex">	
-
-				<div class="header_block_item d-flex">
-					<div class="header_block_toptext">
-						<h1>Видача кредиту</h1>
-					</div>
-					<div class="header_block_text">
-						<p>* фізичні та юридичні особи</p>
-						<p>* ставка від 3% в місяць</p>
-						<p>* наповнення кредиту до 80% 
-							від ринкової вартості майна
-						</p>
-					</div>
-					<div class="header_block_btn">									
-						<div class="button_action">
-							<a href="#">НУЖЕН КРЕДИТ</a>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="header_block_item_sep d-flex"></div>
-
-
-				<div class="header_block_item d-flex">
-					<div class="header_block_toptext">
-						<h1>Видача кредиту</h1>
-					</div>
-					<div class="header_block_text">
-						<p>* фізичні та юридичні особи</p>
-						<p>* ставка від 3% в місяць</p>
-						<p>* наповнення кредиту до 80% 
-							від ринкової вартості майна
-						</p>
-					</div>
-					<div class="header_block_btn">									
-						<div class="button_action">
-							<a href="#">НУЖЕН КРЕДИТ</a>
+					<div class="col-12 col-md-6 col-lg-6 col-xl-4 col_material2 d-flex">
+						<div class="materials">
+							<div class="name_materials">
+								CATALYSTS ON METAL BASE FOIL
+							</div>
+							<div>
+								<div class="front material_img material_img2">
+									<div class="back">
+										<p class="back_text">
+											Metals from the platinum group are located on a metal support consisting of a thin, corrugated, tightly wound metal foil. The processing of these products is very complicated and expensive. Through our partnerships, the Trioma Group has access to the best technological processing solutions that guarantee the best results.  
+										</p>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
+
+					<div class="col-12 col-md-6 col-lg-6 col-xl-4 col_material3 d-flex">
+						<div class="materials">
+							<div class="name_materials">
+								PARTICULATE FILTER
+							</div>
+							<div>
+								<div class="front material_img material_img3">
+									<div class="back">
+										<p class="back_text">
+											Soot filters reduce the amount of soot particles that are present in the exhaust gases of diesel engines. The porous walls of the filter may also contain precious metals.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-6 col-lg-6 col-xl-4 col_material4 d-flex">
+						<div class="materials">
+							<div class="name_materials">
+								LAMBDA PROBES
+							</div>
+							<div>
+								<div class="front material_img material_img4">
+									<div class="back">
+										<p class="back_text">
+											The oxygen sensor is a sensor that measures the oxygen content in the exhaust gas flow and thus regulates the engine control and the right mixture of fuel and air. The oxygen sensor can also contain metals from the platinum group.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-6 col-lg-6 col-xl-4 col_material5 d-flex">
+						<div class="materials">
+							<div class="name_materials">
+								INDUSTRIAL CATALYSTS
+							</div>
+							<div>
+								<div class="front material_img material_img5">
+									<div class="back">
+										<p class="back_text">
+											Trioma is your specialist for the recycling of all types of industrial catalysts. Industrial catalysts are used in various areas of chemical production and refining processes. Precious metals can be pplied or impregnated on different carriers in different shapes and sizes.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div> 
+					</div>
+
+					<div class="col-12 col-md-6 col-lg-6 col-xl-4 col_material6 d-flex">
+						<div class="contact_us">
+							<div class="title_contact_us">
+								Do you want to
+								<br>know more about
+								<br>the Trioma 
+								<br>Groupservices?
+							</div>
+							<div class="subtitle_contact_us">
+								DON'T HESITATE CONTACT US!
+							</div>
+							<button class="button_sell_the_catalyst">
+								Sell the catalyst?
+							</button>  
+						</div>
+					</div>
+
+				</div> <!--  row -->
+
+
+				<div class="row">
+					<div class="col description_material">	
+						<p>
+							The main specialization is the Trioma recovery of precious metals from industrial wastes and secondary are materials, in particular catalysts.
+						</p>
+						<p>
+							Implementation of this activity requires compliance with strict production quality standards. The certificate is approved by Waste Management, which guarantees our professionalism.
+						</p>
+					</div>
+				</div>
+
+			</div>  <!-- container -->
+		</section>
+		<!--!     END THIRD SECTION        -->
+
+
+		<!--!      FOURTH SECTION          -->
+		<section>
+			<div class="container-fluid fourth_section">
+				<div class="row">
+					<div class="col-12 col-md-4 dimonds align-self-end">
+
+						<div class="dimonds_fourth_section">
+							<img src="img/diamond.gif" alt="">
+						</div>
+
+					</div>
+
+					<div class="col-12 col-md-8 description_fourth_section">
+
+						
+						<div class="row">
+							<div class="col-12 col-md-5 align-self-center">
+								<div class="dimond_title">
+									<h3>TRIOMA</h3>
+									<h4>Group</h4>
+								</div>
+							</div>
+							<div class="col-12 col-md-7 align-self-center dimond_text">
+								<p>
+									Trioma is the leader in the European market, offering its partners and customers with the best solutions, price and service for processing or purchase of recyclable materials and the re-circulation of materials.
+								</p>
+							</div>
+						</div>
+
+						
+
+					</div>
+
+				</div> <!-- row -->
+			</div> <!-- container -->
+		</section>
+
+
+
+		<!--!      END FOURTH SECTION          -->
+
+		<!--!      FIFTH SECTION          -->
+		<section>
+			<div class="container-fluid fifth_section">
+				<div class="row">
+
+					<div class="col-12 col-lg-4 first_column_fifth_section">
+						<div class="subtitle subtitle_fifth_section">
+							Triada
+						</div>
+						<div class="title title_fifth_section">
+							About us
+						</div>
+						<hr / class="line">
+						<div class="description_text">
+							Our specialization: autocatalysts, gas purification catalysts, chemical industry and petrochemical catalysts.
+							<br>Also all other recyclable industry waste containing precious metals.
+						</div>
+						<div class="text_contact_us">
+							DON'T HESITATE CONTACT US!
+						</div>
+
+						<button class="button_contact button_contact_fifth_section">
+							Contacts
+						</button>
+					</div>
+
+					<div class="col-12 col-lg-8 second_column_fifth_section">
+
+						<div class="row">
+							<div class="col-12 col-lg-4"> 
+								<div class="about_img about_img1"></div>
+							</div>
+							<div class="col-12 col-lg-8"> 
+								<div class="about_img about_img2"></div>
+							</div>
+							<div class="col-12 col-lg-8"> 
+								<div class=" about_img about_img3"></div>
+							</div>
+							<div class="col-12 col-lg-4"> 
+								<div class="about_img about_img4"></div>
+							</div>
+						</div>
+
+
+					</div>
+
+				</div> <!--ROW -->
+			</div><!-- CONTAINER -->
+
+		</section>
+
+		<!--!      END FIFTH SECTION          -->
+
+
+		<section>
+			<div class="container-fluid contact_section">
+				<div class="row">
+
+					<h2>WRITE US</h2>
+					<h3>Sell the catalyst?</h3>
+					<a name="contact"></a>
+
+					<div class="col-12 col-lg-6">
+						<img src="img/contacts_img1.png" alt="">
+					</div>
+
+
+					<div class="col-12 col-lg-6 col_form">
+
+
+						<form id="form-contact" name="form-contact" role="form" action="" method="POST" data-formactiontype="0" data-inputbox=".t-input-group" class="" data-success-callback="">
+							<div class="cif_dif_desc">
+							<p>C.I.F or N.I.F</p>
+							</div>
+							<p>We do not work with individuals</p>
+
+							<div class="radio">
+								<input class="custom-radio" type="radio" id="CIF" name="type_client" value="CIF">
+								<label for="CIF">C.I.F</label>
+							</div>
+							<div class="radio">
+								<input class="custom-radio" type="radio" id="NIF" name="type_client" value="NIF">
+								<label for="NIF">N.I.F</label>
+							</div>
+
+							<input type="text" id="idnumber" name="idnumber" placeholder="Number C.I.F or N.I.F"><br>
+
+							<input type="text" id="email" name="email" placeholder="E-mail:">
+
+							<input type="text" id="fname" name="fname" placeholder="Full name:">
+
+							<input type="text" id="phone" name="phone" placeholder="Phone:">
+
+							<textarea name="Textarea" class="" placeholder="Your message "  rows="3"></textarea>
+
+
+
+<button type="submit" class="t-submit" >
+Send
+					<div class="t-btn_wrap-effects">
+						<div class="t-btn_effects"></div>
+					</div>
+					</div>
+</button>
+
+						</form>
+					</div>
+
+				</div>
+			</div>
+
+		</section>
+
+
+
+
+
+		<section>
+			<div class="conteiner-fluid footer_icon">
+				<div class="row">
+
+					<h2>CONTACTS AND LOCATIONS</h2>
+					<h3>TRIOMA Reciclaje S.L.</h3>
+
+					<div class="col-12 col-lg-4">
+						<img src="img/icon_smartphone.svg" alt="">
+						<h4>Contact</h4>
+						<p>+34 000 00 00 00 </br> imfo@trioma.cat</p>
+					</div>
+					<div class="col-12 col-lg-4">
+						<img src="img/icon_geolocalize.svg" alt="">
+						<h4>Address</h4>
+						<p>Av. Les Roquetes 11b, 08812,</br>
+						Les Roquetes, Barcelona, Spain</br>
+					N.I.F. / VAT:ESB67365544</p>
+				</div>
+				<div class="col-12 col-lg-4">
+					<img src="img/icon_compass.svg" alt="">
+					<h4>Pathway</h4>
+					<p>We are located in the northern part</br> of the city. The nearest subway is</br> the North Road.</p>
 				</div>
 
 			</div>
-
-
 		</div>
-
-
-	</header>
-
-	
-
-
-<footer class="main_footer">
-	<div class="container-fluid footer-bottom">
-		<div class="row">
-			<div class="col-md-4">
-				<div class="social_wrap">
-					<ul>
-						<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-						<li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-						<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="copyright">
-					<p> &copy; 2020 КРЕДО КОНСАЛТ </p>
-				</div>
-				
-			</div>
-			<div class="col-md-4">
-				<div class="footer-additional-link">
-					<a href="">Политика обработки данных</a> / <a href="">Политика конфиденциальности</a>
-				</div>
-			</div>
-
-
-		</div>
-
-	</div>
-</footer>
+	</section>
 
 
 
+	<footer class="footer">
+		<p class="Copywright">
+			Copyright © 2022 Trioma
+		</p>
+	</footer>
 
-<script src="libs/jquery/jquery-2.1.3.min.js"></script>
-<script src="libs/jquery/jquery-ui.min.js"></script>
+	<script src="libs/jquery/jquery-2.1.3.min.js"></script>
+	<script src="libs/jquery/jquery-ui.min.js"></script>
 
-<script src="libs/bootstrap/js/bootstrap.min.js"></script> 
-<script src="libs/parallax/parallax.min.js"></script>
-<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
-<script src="libs/mixitup/mixitup.min.js"></script>
-<script src="libs/scroll2id/PageScroll2id.min.js"></script>
-<script src="libs/waypoints/waypoints.min.js"></script>
-<script src="libs/animate/animate-css.js"></script>
-<script src="libs/animateNumber/jquery.animateNumber.min.js"></script>
-<script src="libs/jqBootstrapValidation/jqBootstrapValidation.js"></script>
-<script src="js/common.js"></script>
-<!--  <script src="js/jquery.spincrement.js"></script> -->
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script> 
+	<script src="libs/parallax/parallax.min.js"></script>
+	<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script src="libs/mixitup/mixitup.min.js"></script>
+	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/animateNumber/jquery.animateNumber.min.js"></script>
+	<script src="libs/jqBootstrapValidation/jqBootstrapValidation.js"></script>
+	<script src="js/common.js"></script>
+	<!--  <script src="js/jquery.spincrement.js"></script> -->
 
 </body>
 </html>
