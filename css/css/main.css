@@ -3,6 +3,9 @@
   padding: 0;
   font-weight: normal; }
 
+html {
+  scroll-behavior: smooth; }
+
 dl, ol, ul {
   margin: 0px; }
 
@@ -238,15 +241,27 @@ body textarea:required:valid {
   margin: 10px 0 15px 0; }
 
 .button_contact {
-  width: 160px;
-  height: 45px;
-  color: #000000;
-  font-size: 17px;
-  line-height: 1.55;
-  font-weight: 600;
-  letter-spacing: 3px;
-  background-color: #ffe100;
-  border-color: transparent; }
+  display: flex; }
+  .button_contact a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 45px;
+    color: #000000;
+    font-size: 17px;
+    line-height: 1.55;
+    font-weight: 600;
+    letter-spacing: 3px;
+    background-color: #ffe100;
+    border-color: transparent;
+    text-align: center;
+    transition-duration: 0.5s; }
+  .button_contact a:hover {
+    text-decoration: none;
+    border: solid 2px #ffe100;
+    color: #ffe100;
+    background-color: transparent; }
 
 .gnl_menu {
   margin: auto; }
@@ -259,19 +274,30 @@ body textarea:required:valid {
 
 /*!             BUTTON           */
 .button_sell_the_catalyst {
-  width: 200px;
-  height: 45px;
-  background-color: rgba(1, 1, 1, 0);
-  color: #ffe100;
-  font-size: 17px;
-  line-height: 1.55;
-  font-weight: 600;
-  letter-spacing: 3px;
-  border-width: 3px;
-  border-radius: 1px;
-  background-position: center center;
-  border-color: #ffe100;
-  border-style: solid; }
+  display: flex; }
+  .button_sell_the_catalyst a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 45px;
+    background-color: rgba(1, 1, 1, 0);
+    color: #ffe100;
+    font-size: 17px;
+    line-height: 1.55;
+    font-weight: 600;
+    letter-spacing: 3px;
+    border-width: 3px;
+    border-radius: 1px;
+    background-position: center center;
+    border-color: #ffe100;
+    border-style: solid;
+    transition-duration: 0.5s; }
+  .button_sell_the_catalyst a:hover {
+    text-decoration: none;
+    border: solid 2px #ffe100;
+    color: #000000;
+    background-color: #ffe100; }
 
 /*!            END BUTTON           */
 /*!         SECOND SECTION        */
@@ -312,6 +338,9 @@ body textarea:required:valid {
 
 .row_material {
   min-width: 320px; }
+
+.materials {
+  transition-duration: 5s; }
 
 .name_materials {
   text-align: center;
@@ -558,7 +587,11 @@ body textarea:required:valid {
   height: 60px;
   background-color: #ffe100;
   color: #000000;
-  cursor: pointer; }
+  cursor: pointer;
+  transition-duration: 0.5s; }
+
+.t-submit:hover {
+  transform: scale(1.05); }
 
 .t-btn_wrap-effects {
   position: absolute;
@@ -686,6 +719,14 @@ body textarea:required:valid {
     left: 50%;
     top: 50%;
     position: absolute; }
+
+.top_button {
+  position: fixed;
+  z-index: 100000;
+  bottom: 30px;
+  left: 30px;
+  min-height: 30px;
+  display: none; }
 
 @keyframes top_arrow {
   0% {
